@@ -4,6 +4,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useLoader } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 
 function Model() {
   const gltf = useLoader(GLTFLoader, "/soda_can.glb");
@@ -27,6 +28,7 @@ function Model() {
 export default function Home() {
   return (
     <main>
+      <Navbar />
       <Canvas
         style={{
           position: "absolute",

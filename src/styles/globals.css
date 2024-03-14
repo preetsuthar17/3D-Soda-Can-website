@@ -29,9 +29,44 @@ canvas {
     background-color: transparent;
   }
   h1 {
-    font-size: clamp(1rem, 15vw, 8rem);
+    font-size: clamp(1rem, 15vw, 7rem);
     color: rgb(255, 255, 152);
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.421);
-    line-height: clamp(1rem, 15vw, 8rem);
+    line-height: clamp(1rem, 15vw, 7rem);
+  }
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+  z-index: 1;
+  .navbar-header {
+    p {
+      color: white;
+      font-weight: bolder;
+      font-size: 1.1rem;
+    }
+  }
+  .navbar-links {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+      li {
+        a {
+          color: white;
+          opacity: 85%;
+          text-decoration: none;
+          font-size: 14px;
+          &:hover {
+            opacity: 100%;
+          }
+        }
+      }
+    }
   }
 }
